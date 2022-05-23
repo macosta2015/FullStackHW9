@@ -10,5 +10,6 @@ inquirer
         },
     ])
     .then(answers => {
+        answers.framework 
         console.log(answers);
     });
