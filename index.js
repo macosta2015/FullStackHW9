@@ -1,7 +1,6 @@
 const inquirer = require('inquirer');
 
 var fs = require('fs');
-
 fs.readFile('readMe.txt', 'utf8');
 
 // var readMe = fs.readFileSync('readMe.txt', 'utf8');
