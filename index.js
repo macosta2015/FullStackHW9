@@ -2,19 +2,43 @@
 
 const inquirer = require('inquirer');
 
-var fs = require('fs');
-fs.readFile('readMe.txt', 'utf8');
+// var fs = require('fs');
+// fs.readFile('readMe.txt', 'utf8');
 
 // var readMe = fs.readFileSync('readMe.txt', 'utf8');
 // var readMe = fs.readFile('readMe.txt', 'utf8');
 
+inquirer.prompt(
+    [
+        {
+            name: 'color',
+            message: 'What is your favorite color? ',
+            default: 'blue'
+        },
+        {
+            name: 'website', 
+            message: 'What is your favorite website'
+        },
+        {
+            type: 'list', 
+            name: 'books',
+            message: 'What is your favorite Book',
+            choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+        }
 
+    ]
+    
+)
+
+    .then(answers => {
+        console.log('Answer: ', answers)
+    })
 
 //We create a file in the following line!
 //We are using a second method for this
-fs.writeFileSync('writeMe.txt', readMe);
+// fs.writeFileSync('writeMe.txt', readMe);
 
-console.log(readMe);
+// console.log(readMe);
 
 // fd.writeFileSync('writeMe.txt',readme);
 
