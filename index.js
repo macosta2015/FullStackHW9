@@ -53,19 +53,19 @@ const inquirer = require('inquirer');
             {
                 name: 'website', 
                 message: 'What is your favorite website? '
+            },
+            {
+                type: 'rawlist', 
+                name: 'books',
+                message: 'What is your favorite Book',
+                choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+            },
+            {
+                type: 'password', 
+                name: 'secretText',
+                message: 'Password: ',
+                mask: "*"
             }
-            // {
-            //     type: 'rawlist', 
-            //     name: 'books',
-            //     message: 'What is your favorite Book',
-            //     choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
-            // },
-            // {
-            //     type: 'password', 
-            //     name: 'secretText',
-            //     message: 'Password: ',
-            //     mask: "*"
-            // },
         ])
         // .then(response => {
         //     console.log('Answer: ', response)
@@ -76,7 +76,21 @@ const inquirer = require('inquirer');
 
 
 const createReadme = (response) => `
-#${response.color}
+## The color response is:
+# ${response.color}
+
+## The website's name is:
+# ${response.website}
+
+## The book is:
+# ${response.rawlist}
+
+## The password is:
+# ${response.rawlist}
+
+## The secret text is:
+# ${response.secretText}
+
 `;
 
 
