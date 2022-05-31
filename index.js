@@ -20,12 +20,17 @@ inquirer.prompt(
             message: 'What is your favorite website'
         },
         {
-            type: 'list', 
+            type: 'rawlist', 
             name: 'books',
             message: 'What is your favorite Book',
             choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+        },
+        {
+            type: 'password', 
+            name: 'secretText',
+            message: 'Password: ',
+            mask: "*"
         }
-
     ]
     
 )
