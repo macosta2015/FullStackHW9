@@ -1,46 +1,98 @@
 //HomeWork 9
 
 const inquirer = require('inquirer');
+var fs = require('fs');
 
-// var fs = require('fs');
 // fs.readFile('readMe.txt', 'utf8');
 
 // var readMe = fs.readFileSync('readMe.txt', 'utf8');
 // var readMe = fs.readFile('readMe.txt', 'utf8');
 
-inquirer.prompt(
-    [
-        {
-            name: 'color',
-            message: 'What is your favorite color? ',
-            default: 'blue'
-        },
-        {
-            name: 'website', 
-            message: 'What is your favorite website'
-        },
-        {
-            type: 'rawlist', 
-            name: 'books',
-            message: 'What is your favorite Book',
-            choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
-        },
-        {
-            type: 'password', 
-            name: 'secretText',
-            message: 'Password: ',
-            mask: "*"
-        }
-    ]
+// function readmeQuestions(){
+//     inquirer.prompt(
+//         [
+//             {
+//                 name: 'color',
+//                 message: 'What is your favorite color? ',
+//                 default: 'blue'
+//             },
+//             {
+//                 name: 'website', 
+//                 message: 'What is your favorite website'
+//             },
+//             {
+//                 type: 'rawlist', 
+//                 name: 'books',
+//                 message: 'What is your favorite Book',
+//                 choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+//             },
+//             {
+//                 type: 'password', 
+//                 name: 'secretText',
+//                 message: 'Password: ',
+//                 mask: "*"
+//             }
+//         ]
+        
+//     )
     
-)
+//         .then(answers => {
+//             console.log('Answer: ', answers)
+//         })
+// }
 
-    .then(answers => {
-        console.log('Answer: ', answers)
-    })
+const readmeQuestions = () => {
+    return inquirer
+    .prompt(
+        [
+            {
+                name: 'color',
+                message: 'What is your favorite color? ',
+                default: 'blue'
+            },
+            {
+                name: 'website', 
+                message: 'What is your favorite website'
+            },
+            {
+                type: 'rawlist', 
+                name: 'books',
+                message: 'What is your favorite Book',
+                choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+            },
+            {
+                type: 'password', 
+                name: 'secretText',
+                message: 'Password: ',
+                mask: "*"
+            }
+        ]
+        
+    )
+    
+        .then(answers => {
+            console.log('Answer: ', answers)
+        })
+}
 
 
-    console.log('Hello World')
+const createReadme = (response) => `
+# ${response.color}
+`
+
+
+    function init(){
+        readmeQuestions()
+        .then((response) => fs.writeFile('Readme.md', createReadme(response), (err) =>
+        err ? console.error(err) : console.log('Readme file was succesfully created')));
+
+    }
+
+    init()
+
+
+
+
 
 //We create a file in the following line!
 //We are using a second method for this
