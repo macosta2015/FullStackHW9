@@ -46,9 +46,9 @@ const readmeQuestions = () => {
     .prompt(
         [
             {
-                name: 'color',
                 message: 'What is your favorite color? ',
-                default: 'blue'
+                default: 'blue',
+                name: 'color'
             },
             {
                 name: 'website', 
@@ -67,21 +67,22 @@ const readmeQuestions = () => {
                 mask: "*"
             }
         ]
-        
     )
     
-        .then(answers => {
-            console.log('Answer: ', answers)
-        })
+        // .then(answers => {
+        //     console.log('Answer: ', answers)
+        // })
 }
 
 
 const createReadme = (response) => `
-# ${response.color}
-`
+
+## Color response
+ ${answers.color}
+`;
 
 
-    function init(){
+    function init() {
         readmeQuestions()
         .then((response) => fs.writeFile('Readme.md', createReadme(response), (err) =>
         err ? console.error(err) : console.log('Readme file was succesfully created')));
