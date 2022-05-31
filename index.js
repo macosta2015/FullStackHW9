@@ -1,7 +1,7 @@
 //HomeWork 9
 
+const fs = require('fs');
 const inquirer = require('inquirer');
-var fs = require('fs');
 
 // fs.readFile('readMe.txt', 'utf8');
 
@@ -41,10 +41,10 @@ var fs = require('fs');
 //         })
 // }
 
-const readmeQuestions = () => {
+// const readmeQuestions = () => {
+    function readmeQuestions() {
     return inquirer
-    .prompt(
-        [
+    .prompt([
             {
                 message: 'What is your favorite color? ',
                 default: 'blue',
@@ -52,41 +52,40 @@ const readmeQuestions = () => {
             },
             {
                 name: 'website', 
-                message: 'What is your favorite website'
-            },
-            {
-                type: 'rawlist', 
-                name: 'books',
-                message: 'What is your favorite Book',
-                choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
-            },
-            {
-                type: 'password', 
-                name: 'secretText',
-                message: 'Password: ',
-                mask: "*"
+                message: 'What is your favorite website? '
             }
-        ]
-    )
-    
-        // .then(answers => {
-        //     console.log('Answer: ', answers)
+            // {
+            //     type: 'rawlist', 
+            //     name: 'books',
+            //     message: 'What is your favorite Book',
+            //     choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+            // },
+            // {
+            //     type: 'password', 
+            //     name: 'secretText',
+            //     message: 'Password: ',
+            //     mask: "*"
+            // },
+        ])
+        // .then(response => {
+        //     console.log('Answer: ', response)
+
+        //     console.log("The website is: ", response.color)
         // })
 }
 
 
 const createReadme = (response) => `
-
-## Color response
- ${answers.color}
+#${response.color}
 `;
 
 
     function init() {
         readmeQuestions()
+        
+
         .then((response) => fs.writeFile('Readme.md', createReadme(response), (err) =>
         err ? console.error(err) : console.log('Readme file was succesfully created')));
-
     }
 
     init()
