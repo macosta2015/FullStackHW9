@@ -39,6 +39,9 @@ inquirer.prompt(
         console.log('Answer: ', answers)
     })
 
+
+    console.log('Hello World')
+
 //We create a file in the following line!
 //We are using a second method for this
 // fs.writeFileSync('writeMe.txt', readMe);
