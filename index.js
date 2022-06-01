@@ -28,7 +28,7 @@ const createReadme = (response) => `
 
 ## The Github Account is:
 # ${response.GithubName}
-github.com/${response.GithubName}
+https://github.com/${response.GithubName}
 
 ## Please reach out to the following email:
 # ${response.Email}

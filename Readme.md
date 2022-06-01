@@ -3,30 +3,33 @@
 # blue
 
 ## The Titles's name is:
-# marios project
+# mario
 
 ## The description is:
-# testing
+# a
 
 ## The installation is:
-# lol
+# b
 
 ## The usage information name is:
-# many
+# c
 
 ## The Constribution Guidelines is:
-# we
+# d
 
 ## The Test Instructions Guidelines is:
-# mn
+# e
 
 ## The Github Account is:
 # macosta2015
-github.com/macosta2015
+https://github.com/macosta2015
+
+## Please reach out to the following email:
+# macosta2015@my.fit.edu
 
 ## The password is:
 # undefined
 
 ## The secret text is:
-# 12345
+# Hola
 
