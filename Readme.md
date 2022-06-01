@@ -3,7 +3,7 @@
 # blue
 
 ## The website's name is:
-# reddit.com
+# undefined
 
 ## The book is:
 # undefined
@@ -12,5 +12,5 @@
 # undefined
 
 ## The secret text is:
-# MiguelAnfel
+# 1233
 

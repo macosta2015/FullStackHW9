@@ -30,7 +30,7 @@ const createReadme = (response) => `
                 name: 'color'
             },
             {
-                name: 'website', 
+                name: 'What is title of the project?', 
                 message: 'What is your favorite website? '
             },
             {
