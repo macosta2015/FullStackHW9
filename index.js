@@ -8,11 +8,30 @@ const createReadme = (response) => `
 ## The color response is:
 # ${response.color}
 
-## The website's name is:
-# ${response.website}
+## The Titles's name is:
+# ${response.Title}
 
-## The book is:
-# ${response.rawlist}
+## The description is:
+# ${response.Description}
+
+## The installation is:
+# ${response.Installation}
+
+## The usage information name is:
+# ${response.UsageInformation}
+
+## The Constribution Guidelines is:
+# ${response.ConstributionGuidelines}
+
+## The Test Instructions Guidelines is:
+# ${response.TestInstructions}
+
+## The Github Account is:
+# ${response.GithubName}
+github.com/${response.GithubName}
+
+## Please reach out to the following email:
+# ${response.Email}
 
 ## The password is:
 # ${response.rawlist}
@@ -30,14 +49,42 @@ const createReadme = (response) => `
                 name: 'color'
             },
             {
-                name: 'What is title of the project?', 
-                message: 'What is your favorite website? '
+                name: 'Title', 
+                message: 'What is title of the project? '
+            },
+            {
+                name: 'Description', 
+                message: 'What is description of the project? '
+            },
+            {
+                name: 'Installation', 
+                message: 'How to installation  the project? '
+            },
+            {
+                name: 'UsageInformation', 
+                message: 'What is usage information of the project? '
+            },
+            {
+                name: 'ConstributionGuidelines', 
+                message: 'What are the contributions of of the project? '
+            },
+            {
+                name: 'TestInstructions', 
+                message: 'What are the test instructions of the project? '
             },
             {
                 type: 'rawlist', 
                 name: 'books',
-                message: 'What is your favorite Book',
-                choices: ['Percy Jackson','Think and Grow Rich','How to Win Friends and Influence People', 'Why we sleep']
+                message: 'Which licenses are used in the project? ',
+                choices: ['Public domain','Permissive','LGPL', 'Copyleft']
+            },
+            {
+                name: 'GithubName', 
+                message: 'What is the Githubname '
+            },
+            {
+                name: 'Email', 
+                message: 'What is your email so that they can reach out '
             },
             {
                 type: 'password', 
