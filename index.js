@@ -5,49 +5,47 @@ const inquirer = require('inquirer');
 
 
 const createReadme = (response) => `
-## The color response is:
-### ${response.color}
 
-## The Titles's name is:
-### ${response.Title}
+# The Titles's name is:
+#### ${response.Title}
 
-## The description is:
-### ${response.Description}
+# The description is:
+#### ${response.Description}
 
-## The installation is:
-### ${response.Installation}
+# The installation is:
+#### ${response.Installation}
 
-## The usage information name is:
-### ${response.UsageInformation}
+# The usage information name is:
+#### ${response.UsageInformation}
 
-## The Constribution Guidelines is:
-### ${response.ConstributionGuidelines}
+# The Constribution Guidelines is:
+#### ${response.ConstributionGuidelines}
 
-## The Test Instructions Guidelines is:
-### ${response.TestInstructions}
+# The Test Instructions Guidelines is:
+#### ${response.TestInstructions}
 
-## The Github Account is:
-### ${response.GithubName}
+# The Github Account is:
+#### ${response.GithubName}
 https://github.com/${response.GithubName}
 
-## Please reach out to the following email:
-### ${response.Email}
+# Please reach out to the following email:
+#### ${response.Email}
 
-## The password is:
-### ${response.rawlist}
+# The password is:
+#### ${response.rawlist}
 
-## The secret text is:
-### ${response.secretText}
+# The secret text is:
+#### ${response.secretText}
 
 `;
     function readmeQuestions() {
     return inquirer
     .prompt([
-            {
-                message: 'What is your favorite color? ',
-                default: 'blue',
-                name: 'color'
-            },
+            // {
+            //     message: 'What is your favorite color? ',
+            //     default: 'blue',
+            //     name: 'color'
+            // },
             {
                 name: 'Title', 
                 message: 'What is title of the project? '
@@ -89,7 +87,7 @@ https://github.com/${response.GithubName}
             {
                 type: 'password', 
                 name: 'secretText',
-                message: 'Password: ',
+                message: 'Is there a secret password in the project: ',
                 mask: "*"
             }
         ])
