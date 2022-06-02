@@ -1,22 +1,22 @@
 
 
 # The Titles's name is:
-#### Mario's HomeWork
+#### Readme Generator
 
 # The description is:
-#### Build a Readme Generator
+#### Homework for Bootcamp
 
 # The installation is:
 #### use npm i
 
 # The usage information name is:
-#### You are able to ask questions to the user from the command line. 
+#### use inquirer libraries and fs
 
 # The Constribution Guidelines is:
-#### Mario 
+#### Mario Acosta
 
 # The Test Instructions Guidelines is:
-#### You need to open terminal. Then run npm i and then run index.js
+#### Run the project and answer all the questions to generate Readme. 
 
 # The Github Account is:
 #### macosta2015
@@ -29,5 +29,5 @@ https://github.com/macosta2015
 #### undefined
 
 # The secret text is:
-#### JustForFun
+#### Hello!
 
