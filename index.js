@@ -76,7 +76,7 @@ https://github.com/${response.GithubName}
                 type: 'rawlist', 
                 name: 'books',
                 message: 'Which licenses are used in the project? ',
-                choices: ['Public domain','Permissive','LGPL', 'Copyleft']
+                choices: ['MIT','Academic Free License v3.0','Do What The F*ck You Want To Public License', 'Educational Community License', 'PostgreSQL License', 'Mozilla Public License 2.0','PostgreSQL License']
             },
             {
                 name: 'GithubName', 
@@ -84,7 +84,7 @@ https://github.com/${response.GithubName}
             },
             {
                 name: 'Email', 
-                message: 'What is your email so that they can reach out '
+                message: 'What is your email so that they can reach out? '
             },
             {
                 type: 'password', 
