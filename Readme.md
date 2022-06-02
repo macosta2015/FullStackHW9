@@ -1,22 +1,22 @@
 
 
 # The Titles's name is:
-#### Hirad and Mario
+#### Mario's HomeWork
 
 # The description is:
-#### a
+#### Build a Readme Generator
 
 # The installation is:
-#### b
+#### use npm i
 
 # The usage information name is:
-#### c
+#### You are able to ask questions to the user from the command line. 
 
 # The Constribution Guidelines is:
-#### d
+#### Mario 
 
 # The Test Instructions Guidelines is:
-#### e
+#### You need to open terminal. Then run npm i and then run index.js
 
 # The Github Account is:
 #### macosta2015
@@ -29,5 +29,5 @@ https://github.com/macosta2015
 #### undefined
 
 # The secret text is:
-#### 123456
+#### JustForFun
 
