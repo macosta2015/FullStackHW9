@@ -6,38 +6,38 @@ const inquirer = require('inquirer');
 
 const createReadme = (response) => `
 ## The color response is:
-# ${response.color}
+### ${response.color}
 
 ## The Titles's name is:
-# ${response.Title}
+### ${response.Title}
 
 ## The description is:
-# ${response.Description}
+### ${response.Description}
 
 ## The installation is:
-# ${response.Installation}
+### ${response.Installation}
 
 ## The usage information name is:
-# ${response.UsageInformation}
+### ${response.UsageInformation}
 
 ## The Constribution Guidelines is:
-# ${response.ConstributionGuidelines}
+### ${response.ConstributionGuidelines}
 
 ## The Test Instructions Guidelines is:
-# ${response.TestInstructions}
+### ${response.TestInstructions}
 
 ## The Github Account is:
-# ${response.GithubName}
+### ${response.GithubName}
 https://github.com/${response.GithubName}
 
 ## Please reach out to the following email:
-# ${response.Email}
+### ${response.Email}
 
 ## The password is:
-# ${response.rawlist}
+### ${response.rawlist}
 
 ## The secret text is:
-# ${response.secretText}
+### ${response.secretText}
 
 `;
     function readmeQuestions() {
