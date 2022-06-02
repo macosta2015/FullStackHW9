@@ -1,28 +1,28 @@
 
 ## The color response is:
-# blue
+# red
 
 ## The Titles's name is:
-# mario
+# Mario's and Jorge's Test
 
 ## The description is:
-# a
+# Test
 
 ## The installation is:
-# b
+# npm i 
 
 ## The usage information name is:
-# c
+# Test
 
 ## The Constribution Guidelines is:
-# d
+# many
 
 ## The Test Instructions Guidelines is:
-# e
+# too many
 
 ## The Github Account is:
 # macosta2015
-https://github.com/macosta2015
+[https://github.com/macosta2015]{https://github.com/macosta201}
 
 ## Please reach out to the following email:
 # macosta2015@my.fit.edu
@@ -31,5 +31,5 @@ https://github.com/macosta2015
 # undefined
 
 ## The secret text is:
-# Hola
+# 12345521
 
