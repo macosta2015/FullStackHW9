@@ -104,8 +104,6 @@ https://github.com/${response.GithubName}
 
     function init() {
         readmeQuestions()
-        
-
         .then((response) => fs.writeFile('Readme.md', createReadme(response), (err) =>
         err ? console.error(err) : console.log('Readme file was succesfully created')));
     }
