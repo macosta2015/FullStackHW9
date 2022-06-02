@@ -1,33 +1,36 @@
 
 
 # The Titles's name is:
-#### Readme Generator
+#### a
 
 # The description is:
-#### Homework for Bootcamp
+#### b
 
 # The installation is:
-#### use npm i
+#### c
 
 # The usage information name is:
-#### use inquirer libraries and fs
+#### d
 
 # The Constribution Guidelines is:
-#### Mario Acosta
+#### e
 
 # The Test Instructions Guidelines is:
-#### Run the project and answer all the questions to generate Readme. 
+#### f
+
+# The License used is:
+#### MIT
 
 # The Github Account is:
 #### macosta2015
 https://github.com/macosta2015
 
 # Please reach out to the following email:
-#### macosta2015@my.fit.edu
+#### macosta20152
 
 # The password is:
 #### undefined
 
 # The secret text is:
-#### Hello!
+#### 123
 

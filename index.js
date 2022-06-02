@@ -24,6 +24,9 @@ const createReadme = (response) => `
 # The Test Instructions Guidelines is:
 #### ${response.TestInstructions}
 
+# The License used is:
+#### ${response.License}
+
 # The Github Account is:
 #### ${response.GithubName}
 https://github.com/${response.GithubName}
@@ -72,7 +75,7 @@ https://github.com/${response.GithubName}
             },
             {
                 type: 'rawlist', 
-                name: 'books',
+                name: 'License',
                 message: 'Which licenses are used in the project? ',
                 choices: ['MIT','Academic Free License v3.0','Do What The F*ck You Want To Public License', 'Educational Community License', 'PostgreSQL License', 'Mozilla Public License 2.0','PostgreSQL License']
             },
