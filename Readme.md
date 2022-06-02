@@ -22,7 +22,7 @@
 
 ## The Github Account is:
 # macosta2015
-[https://github.com/macosta2015]{https://github.com/macosta201}
+{https://github.com/macosta2015}[https://github.com/macosta201]
 
 ## Please reach out to the following email:
 # macosta2015@my.fit.edu
